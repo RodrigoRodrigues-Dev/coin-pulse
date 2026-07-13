@@ -12,12 +12,15 @@
       <router-view />
     </v-main>
   </v-app>
+
+  <Analytics />
 </template>
 
 <script setup>
 // Imports
 import { computed } from 'vue';
 import { useTheme } from 'vuetify';
+import { Analytics } from "@vercel/analytics/vue"
 
 // Component Imports
 import NavBar from './components/NavBar.vue';
